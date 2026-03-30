@@ -55,8 +55,8 @@ a {
   border: 2px solid #001e1d;
   height: 500px;
   display: grid;
- 
-  
+  grid-template: repeat(3, 1fr) / 1fr minmax(400px, 1fr);
+  gap: 20px 5px;
 }
 
 .grid-area{
@@ -68,7 +68,8 @@ a {
 }
 
 .one {
-
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .two {
